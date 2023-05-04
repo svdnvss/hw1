@@ -1,7 +1,7 @@
 // Задание первого уровня 2
 // Есть объединение (юнион) типов заказов в различных состояниях
 // Нужно заменить FIXME на тип который достанет из Order все возможные состояния (state)
-type FIXME = "initial" | "inWork" | "buyingSupplies" | "producing" | "fullfilled";
+type FIXME = Order['state'];
 type Order =
     | {
     state: "initial";
